@@ -1,0 +1,193 @@
+@import '../colors.scss';
+
+.contact{
+    width: 100%;
+    display: flex;   
+    align-items: center;
+    justify-content: center;    
+    min-height: 90vh;
+    background: $linearGradient;
+    padding-bottom: 2rem;       
+    padding-top: 2rem;    
+    .form{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 45rem;
+        min-height: 36rem;
+        background: $multiColorGradient2;
+        padding: 0rem 2rem;
+        border-radius: 1rem 1rem 0 0; 
+        h1{
+            padding-top: 1rem;
+        }       
+        .form-item{
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            width: 35rem;
+            label{
+                font-size: 1.4rem;
+                color: white;
+            }
+            margin: 1.2rem 0rem;            
+            input,textarea{
+                width: inherit;
+                border: none;            
+                font-size: 1.2rem;
+                resize: none;
+                outline: none;
+                padding: 0.5rem;
+                background-color: rgba(245, 245, 220, 0);
+                border-bottom: 1px solid rgba(218, 206, 206, 0.98);
+                color: white;
+                &::-webkit-input-placeholder{
+                    color: rgb(190, 190, 190);
+                }            
+            }
+            textarea{
+                margin-top: 1rem;
+                height: 10rem;
+                background-color: rgba(255, 255, 255, 0.21);
+                &:active{
+                    border: 1px solid rgba(255, 255, 255, 0.714);
+                }
+            }
+        }
+        button{
+            padding: 0.3rem 1rem;
+            font-size: 1.4rem;
+            border-radius: 0.5rem;
+            border: 1px solid rgb(169, 169, 169);
+            width: 8rem;
+            cursor: pointer;
+            color: white;
+            font-weight: 700;
+            background-color: rgba(8, 6, 47, 0.469);
+            &:active{
+                transform: scale(0.9);
+            }
+        }
+    }
+    #slider{
+        height: inherit;
+        // border: 2px solid rgb(220, 8, 8);
+        background-color: #ffffffe3;
+        border-left: none;        
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        flex-direction: column;           
+        border-radius: 0 0 1rem 1rem;
+        #slider-container{
+            // border: 2px solid rgb(8, 220, 26);
+            animation: close 1s ease-in-out forwards;
+            display: flex;                           
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+            height: 6rem;                
+            
+            // border: 2px solid red;
+            svg{
+                font-size: 0rem;
+                margin: 1rem;
+                // animation: popin 1s ease-in-out forwards;
+                &:nth-child(1){
+                    color: blue;
+                    &:hover{
+                        color: rgb(77, 77, 247);
+                    }
+                }
+            }
+        }
+        #navigate{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 3rem;                
+            width: 100%;
+            background: $multiColorGradient2;
+            border-radius: 0 0 1rem 1rem ;
+            cursor: pointer;
+            svg{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-weight: 700;
+                font-size: 3rem;
+            }
+        }
+    }        
+}
+
+@keyframes open {
+    from{
+        // transform: scale(0);
+        height: 0rem;
+    }
+    to{
+        // transform: scale(1);
+        height: 6rem;
+    }
+}
+@keyframes close {
+    from{
+        // transform: scale(1);
+        height: 6rem;        
+    }
+    to{
+        // transform: scale(0);
+        height: 0rem;
+    }
+}
+@keyframes popup {
+    from{
+        font-size: 0rem;
+    }
+    to{
+        font-size: 5rem;
+    }
+}
+@keyframes popin{
+    from{
+        font-size: 5rem;
+    }
+    to{
+        font-size: 0rem;
+    }
+}
+
+@media screen and (max-width:512px) {
+    .contact{
+        .form-container{
+            .form{                
+                width: 32rem; 
+                padding-bottom: 1rem;               
+                .form-item{
+                    width: 27rem;
+                    label,input,textarea{
+                        font-size: 1.5rem;                        
+                    }
+                }
+                button{
+                    width: 9rem;
+                    font-size: 1.6rem;
+                }
+            }            
+        }
+    }
+}
+@media screen and (max-width:359px) {
+    .contact{
+        .form-container{
+            .form{
+                width: 29rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+#sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-right: 1px solid rgba(151, 151, 151, 0.683);
+    height: 100vh;
+    width: 6rem;
+    flex: 2;
+    font-size: 1.2rem;  
+    // background-color: rgb(229 239 252 / 33%);  
+    #admin-title{
+        padding: 1rem 0rem;
+        text-align: center;
+        width: 100%;
+        background-color: rgb(53 69 222);
+        color: white;
+        font-weight: 700;
+        height: 3rem;
+    }
+    #admin-navbar{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .sidebar-item{
+            width: inherit;
+            padding: 1rem 0rem;
+            text-align: center;            
+            width: 100%;
+            color: black;
+            &:hover{
+                background-color: rgb(33, 33, 33);;
+                cursor: pointer;
+                color: white;
+            }
+        }
+    }
+}

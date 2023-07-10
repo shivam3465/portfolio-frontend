@@ -1,0 +1,43 @@
+.adminAbout{
+    .main-container{
+        .image-div{            
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;            
+            .image-container{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;            
+                width: auto;
+                div:nth-child(1){                    
+                    width: 12rem;
+                    font-size: 1.3rem;
+                    padding: 0.3rem;
+                }
+                #image{
+                    border: 1px solid rgb(117, 117, 117);
+                    border-radius: 50%;
+                    height: 10rem;
+                    width: 10rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img{
+                        border-radius:inherit;
+                        width: inherit;
+                        height: inherit;
+                        object-fit: cover;
+                    }
+                }
+            }
+            input{
+                margin: 1rem;
+                font-size: 1.1rem;
+                padding: 0.2rem;
+                border: 0.3rem;                
+            }
+        }
+    }
+}

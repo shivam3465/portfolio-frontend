@@ -1,0 +1,62 @@
+.adminProject{
+    .add-item-layout{
+        height: 80vh;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        .button{
+            width: 8rem;
+        }      
+    }
+    .projectButton{
+        margin-bottom: 1.5rem;
+    }  
+    .add-item-layout{
+        .skill-item{
+            display: flex;
+            justify-content: flex-start;
+        }
+    }
+        
+}
+#technologies{
+    display: flex;
+    // justify-content: flex-;
+    align-items: flex-start;
+    flex-direction: column;    
+    input{                
+        margin-right: 2rem;
+        font-size: 1.1rem;
+        padding: 0.3rem;
+    }
+    .tech{        
+        display: flex;
+        // width: auto;
+        width: 40rem;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+        .tech-item{
+            background-color: purple;
+            color: white;
+            min-width: 6rem;
+            font-weight: 700;
+            font-size: 1.1rem;
+            border-radius: 0.5rem;
+            margin: 0.5rem;
+            text-align: center;
+            cursor: pointer;
+            padding: 0.3rem;
+            text-transform: uppercase;
+        }
+    }
+    .add-tech{
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .button{
+            font-size: 1.1rem;
+        }
+    }
+}

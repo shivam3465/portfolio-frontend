@@ -1,0 +1,50 @@
+@import '../colors.scss';
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 3rem;
+    // background: $linearGradient;
+    font-size: 1.5rem;
+    color: $FirstFontColor;
+    background:linear-gradient(0deg, rgba(34, 34, 34, 0) 0%, rgba(8, 8, 8, 0.456) 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;  
+    z-index: 1100;  
+    #left{
+        font-size: 2rem;
+        color: $FirstFontColor;
+        text-shadow: 0 0 6px $secondFontColor;
+    }
+    #right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            cursor: pointer;
+            margin-right: 1.5rem;
+            color: $FirstFontColor;
+            font-size: 1.4rem;
+            &:hover{
+                color: rgb(79, 79, 79);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 512px) {
+    #header{
+        padding: 0.5rem 0.1rem;
+        #left{
+            display: none;
+        }
+        #right{
+            a{
+                margin-right: 1.8rem;
+                font-size: 1.6rem;
+            }
+        }
+    }
+}

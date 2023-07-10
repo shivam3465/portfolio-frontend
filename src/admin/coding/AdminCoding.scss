@@ -1,0 +1,30 @@
+.adminCoding{
+    .skill-item{        
+        img{
+            width: 3rem;
+        }
+        a{
+            color: black;
+            &:hover{
+                color: rgb(83, 31, 118);
+            }
+        }
+        svg{
+            &:nth-child(1){
+                color: rgb(13 0 154);
+            }
+            &:nth-child(2){
+                color: rgb(220 52 52);
+            }
+        }
+    }
+    .add-item-layout{
+        height: 20vh;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        .button{
+            width: 8rem;
+        }
+    }
+}

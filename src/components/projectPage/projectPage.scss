@@ -1,0 +1,68 @@
+@import '../colors.scss';
+
+#project-page{
+    padding-top: 2.2rem;
+    min-height: 100vh;
+    background: $linearGradient;
+    color: white;
+    h1{
+        margin: 1rem 0rem;
+        margin-left: 4rem;
+        font-size: 2.5rem;
+    }
+    #project-desc{
+        margin-left: 4rem;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    #project-container{
+        justify-content: space-between;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    #project-page{
+        #project-container{
+            grid-template-columns: auto auto;
+            .project-item{
+                width: 27rem;
+                .project-image{
+                    width: 27rem;
+                    height: 15.5rem;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:650px) {
+    #project-page{
+        #project-container{
+            .project-item{
+                width: 21rem;
+                margin-bottom: 5rem;
+                .project-image{
+                    width: 21rem;
+                    height: 12rem;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 512px) {
+    #project-page{
+        #project-container{
+            grid-template-columns: auto;
+            .project-item{
+                width: 33rem;
+                .project-image{
+                    width: 33rem;
+                    height: 19rem;
+                }
+            }
+        }
+    }
+}
