@@ -46,10 +46,12 @@
     img {
       transition: all 300ms ease-in-out;
       width: inherit;
+      height: inherit;
       object-fit: cover;
       &:hover {
         cursor: pointer;
         width: 107%;
+        height: 107%;
       }
     }
   }
