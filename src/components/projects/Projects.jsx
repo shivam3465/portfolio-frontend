@@ -3,10 +3,10 @@ import "./projects.scss";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-export const Project = ({ project }) => {  
+export const Project = ({ project }) => {
   return (
     <div className="project-item">
-      <Link to={`/project/${project._id}`}>
+      <Link to={`/project/${project?._id}`}>
         <div className="project-image">
           <img src={project?.image?.url} alt="" />
         </div>
@@ -23,8 +23,9 @@ export const Project = ({ project }) => {
 export default function Projects() {
   const { project } = useSelector((state) => state.user);
 
-  return (
-    <div id="projects">      
+  return;
+  project ? (
+    <div id="projects">
       <div id="project-container">
         <div className="project-item">
           <h1>PROJECTS</h1>
@@ -42,5 +43,7 @@ export default function Projects() {
         {project.length && <Project project={project[2]} />}
       </div>
     </div>
+  ) : (
+    <></>
   );
 }
