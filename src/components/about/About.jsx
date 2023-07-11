@@ -24,7 +24,6 @@ export default function About() {
       onMouseEnter={() => setShowAnimation((e) => true)}
       onMouseLeave={() => setShowAnimation((e) => false)}
     >
-      <video src="C:/Users/Hp/Desktop/assests/video.mkv"></video>  
       <div id="about-container">
         <div id="image-container">
           <img src={user?.aboutPic?.url} alt="" />
