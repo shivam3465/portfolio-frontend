@@ -10,7 +10,7 @@ import Header from '../header/Header'
 export default function Home() {  
   
   return (
-    <div id='home'>      
+    <div id='home'>        
       <Header/>      
         <Featured/>
         <About />

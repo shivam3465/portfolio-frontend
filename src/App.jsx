@@ -17,10 +17,9 @@ import {ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { useEffect } from "react";
 
-function App() {  
-  // const baseUrl=import.meta.env.VITE_SERVER_URL; 
-   const baseUrl="https://portfolio-backend-eight-zeta.vercel.app/api/v1";
-
+function App() {    
+   const baseUrl=useSelector(state=>state.user);
+   
   const dispatch =useDispatch();
   
   useEffect(() =>{
@@ -62,7 +61,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/project" element={<ProjectPage />} />
-          <Route path="/project/:id" element={<ProjectDetails />} />
+          <Route path="/project/:id" element={<ProjectDetails />} />          
 
           <Route path="/admin" element={<Login />} />
           <Route path="/admin/home" element={<Admin />} />

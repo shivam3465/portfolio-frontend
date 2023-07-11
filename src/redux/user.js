@@ -4,7 +4,7 @@ const userSlice=createSlice({
     name: "user",
     initialState:{
         logined: false,
-        baseUrl: "http://localhost:4000/api/v1",
+        baseUrl: "https://portfolio-backend-eight-zeta.vercel.app/api/v1",
         user: {},
         desc: "",
         about: "",
