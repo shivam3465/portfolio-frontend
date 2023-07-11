@@ -23,8 +23,7 @@ export const Project = ({ project }) => {
 export default function Projects() {
   const { project } = useSelector((state) => state.user);
 
-  return;
-  project ? (
+  return project ? (
     <div id="projects">
       <div id="project-container">
         <div className="project-item">
