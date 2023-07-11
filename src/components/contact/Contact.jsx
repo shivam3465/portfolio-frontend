@@ -5,7 +5,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import { useSelector } from "react-redux";
+import { toast } from "react-toastify";
 
 const AccountIcon = ({ show }) => {
   return (
@@ -35,7 +35,8 @@ export default function Contact() {
           withCredentials: true,
         }
       );
-      console.log(res);
+      // console.log(res);
+      toast(res.message)
     } catch (error) {
       console.log(error);
     }
