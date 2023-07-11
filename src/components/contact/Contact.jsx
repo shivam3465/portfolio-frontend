@@ -22,7 +22,7 @@ const AccountIcon = ({ show }) => {
 export default function Contact() {
   const [show, setShow] = useState(false);
   const [info, setInfo] = useState({});
-  const {baseUrl}=useSelector(state=>state.user);
+  const baseUrl="https://portfolio-backend-eight-zeta.vercel.app/api/v1";
 
   const sendMail = async (e) => {
     e.preventDefault();
