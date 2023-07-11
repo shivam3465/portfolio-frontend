@@ -18,7 +18,9 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useEffect } from "react";
 
 function App() {  
-  const baseUrl=import.meta.env.VITE_SERVER_URL;  
+  // const baseUrl=import.meta.env.VITE_SERVER_URL; 
+   const baseUrl="https://portfolio-backend-eight-zeta.vercel.app/api/v1";
+
   const dispatch =useDispatch();
   
   useEffect(() =>{
